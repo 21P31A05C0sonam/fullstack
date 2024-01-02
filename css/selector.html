@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* <!-- universal selector -->  */
+    *{
+        margin: 0;
+        padding: 0;
+        color: brown;
+    }
+    /* type selector */
+    /* h1{
+        background-color: aqua;
+    } */
+    /* . is used for class */
+    .bg-green{
+        background-color: hwb(132 4% 7%);
+    }
+    /* # is used for id */
+    #bg-orange
+    {
+        background-color: orange;
+    }
+    a[target="_blank"]{
+        background-color: #afafd7;
+    }
+    /* grouping */
+    h1, h2, h3 {
+        background-color: #430101;
+    }
+    ul li{
+        background-color: rgb(19, 241, 241);
+    }
+    /* it will only take child of header */
+    header>a{
+        background-color: #efdb68;
+    }
+    /* ~ is used for siblings */
+    /* img ~ p
+    {
+        background-color: lawngreen;
+    } */
+    /* + is used for adjacent siblings */
+    img + p{
+        background-color: yellowgreen;
+    }
+    </style>
+    
+    
+</head>
+<body>
+    <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h2 class="bg-green">Lorem ipsum dolor sit amet consectetur.</h2>
+    <h3 class="bg-green" id="bg-orange">Lorem ipsum dolor sit amet consectetur adipisicing.</h3> -->
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+    <h2 >Lorem ipsum dolor sit amet consectetur.</h2>
+    <h3 >Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <li>four</li>
+    <header>
+        <a href="#">google</a>
+        <nav>
+            <ul>
+                <li>home</li>
+                <a href="#">logo</a>
+            </ul>
+        </nav>
+        <a href="#">sonam</a>
+    </header>
+    <div>
+        <img src="#" alt="">
+        <!-- these two p are siblings of each other -->
+        <p>change me</p>
+        <p>change me too</p>
+        <div>
+            <!-- this p is not siblings of previous p -->
+            <p>hlo madam</p>
+        </div>
+        
+    </div>
+
+    <a  target ="_blank" href="https://pwskills.com">pwskils</a>
+    <a  target ="_parent" href="https://google.com">google</a>
+</body>
+</html>

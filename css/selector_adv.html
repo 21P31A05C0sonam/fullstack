@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance selector</title>
+    <style>
+        /* pseudo selector */
+        h1:hover{
+            background-color: violet;
+        }
+        button:focus{
+            background-color: brown;
+        }
+        div:nth-child(2n)
+        {
+            background-color: #eabdda;
+        }
+        /* special selectors */
+        h1::after{
+            content: "after !";
+            color: darkblue;
+        }
+        div::before{
+            content: "before!";
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>
+    <button>click</button>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+</body>
+</html>

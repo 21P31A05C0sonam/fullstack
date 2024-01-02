@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vh vm</title>
+    <style>
+        .base
+        {
+        background-color: #bd1515;
+        color: aliceblue;
+        }
+    .box{
+            width: 200px;
+            border: 2px solid;
+        }
+    .fifty-percent
+    {
+            width:50% ;
+    }
+    .vm{
+            width:50vw ;
+        }
+    .vh{
+            height:50vh ;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- VH:viewport height -->
+    <!-- VW:viewport width -->
+    <div class="base fifty-percent">50%</div>
+    <div class="base vw">50vw</div>
+    <div class="base vh">50vh</div>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+    <div class="box">
+        <div class="base fifty-percent">50%</div>
+        <div class="base vw">50vw</div>
+        <div class="base vh">50vh</div>
+    </div>
+</body>
+</html>
